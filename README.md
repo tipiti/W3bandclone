@@ -1,2 +1,2 @@
 # W3bandclone
-# Website tự học đầu tiên của Trương Phúc Thạnh
+# Website tự học của Trương Phúc Thạnh
