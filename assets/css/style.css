@@ -8,6 +8,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,6 +22,26 @@ html {
 
 .text-center {
     text-align: center !important;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 11px 16px;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.full-right {
+    float: right;
 }
 
 .mt-8 {
@@ -61,10 +82,6 @@ html {
 }
 
 /* main */
-#main {
-    
-}
-
 #header {
     position: fixed;
     top: 0;
@@ -177,14 +194,9 @@ html {
     margin-top: 15px ;
 }
 
-
-#content {
-
-}
-
 #content .content-section {
     width: 800px;
-    padding: 60px 0;
+    padding: 64px 0 112px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -268,8 +280,6 @@ html {
 /* places */
 .places-list {
     margin-top: 32px;
-    padding-bottom: 48px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -301,24 +311,33 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-    padding: 11px 16px;
-    margin-top: 15px;
-    border: none;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-    cursor: pointer;
+/* map section */
+.map-section img {
+    width: 100%;
 }
 
 #footer {
-    
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list a {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer .socials-list a:hover {
+    color: rgba(0,0,0,0.4);
+    cursor: context-menu;
+}
+
+#footer .coppy-right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer a {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* mẫu mua vé */
@@ -459,19 +478,4 @@ html {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
-}
-
-.form-submit-btn {
-    font-size: 15px;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    float: right;
-}
-
-.form-submit-btn:hover {
-    color: black;
-    background-color: #ccc;
-    cursor: pointer;
 }
