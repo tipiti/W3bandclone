@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3_band</title>
+    <title>W3_band Clone</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4-web/css/all.css">
 </head>
@@ -59,7 +59,7 @@
                         <p class="member-name">Name</p>
                         <img src="./assets/img/members/bandmember.jpg" alt="Member" class="member-img">
                     </div>
-                    <div class="clear"></div><!-- sử dụng khi float bị lỗi hiển thị, css bên file css-->
+                    <!-- <div class="clear"></div>sử dụng khi float bị lỗi hiển thị, css bên file css -->
                 </div>
             </div>
 
@@ -105,8 +105,6 @@
                                 <button class="place-buy-btn btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
-
                     </div>
                 </div>
 
@@ -116,7 +114,32 @@
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-
+                
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone"></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
             </div>
             
         </div>

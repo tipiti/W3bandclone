@@ -20,13 +20,26 @@ html {
 }
 
 .text-center {
-    text-align: center; !important
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -41,6 +54,10 @@ html {
 
 .col-half {
     width: 50%;
+}
+
+.col-full {
+    width: 100%;
 }
 
 /* main */
@@ -333,8 +350,13 @@ html {
     right: 0;
     top: 0;
     color: #fff;
-    padding: 12px;
+    padding: 16px;
     cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: black;
 }
 
 .modal-header {
@@ -346,6 +368,7 @@ html {
     color: #fff;
     font-size: 30px;
     letter-spacing: 4px;
+    font-weight: lighter;
 }
 
 .modal-body {
@@ -379,8 +402,8 @@ html {
     margin-right: 16px;
 }
 
-.fas.fa-shopping-cart, .fas.fa-user {
-    margin-right: 6px;
+.fa-shopping-cart,.fa-user {
+    width: 20px;
 }
 
 #buy-tickets {
@@ -408,4 +431,39 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i {
+    width: 30px;
+    /* display: inline-block; */
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn {
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 16px;
+    float: right;
 }
