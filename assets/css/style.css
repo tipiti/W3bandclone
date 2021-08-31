@@ -308,11 +308,13 @@ html {
     background-color: black;
     padding: 11px 16px;
     margin-top: 15px;
+    border: none;
 }
 
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 #footer {
@@ -463,7 +465,13 @@ html {
     font-size: 15px;
     background-color: black;
     color: white;
-    border: 1px solid black;
+    border: none;
     padding: 10px 16px;
     float: right;
+}
+
+.form-submit-btn:hover {
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
 }
