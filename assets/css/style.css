@@ -135,8 +135,7 @@ html {
 
 
 #content {
-    /* height: 1000px;
-    background-color: wheat; */
+
 }
 
 #content .content-section {
@@ -310,6 +309,7 @@ html {
     max-width: calc(100%-30%);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease 0.4s;
 }
 
 .modal-close {
@@ -329,6 +329,7 @@ html {
     justify-content: center;
     color: #fff;
     font-size: 30px;
+    letter-spacing: 4px;
 }
 
 .modal-body {
@@ -358,8 +359,12 @@ html {
     color: #2196f3;
 }
 
-.fas.fa-briefcase {
+.fas.fa-briefcase{
     margin-right: 16px;
+}
+
+.fas.fa-shopping-cart, .fas.fa-user {
+    margin-right: 6px;
 }
 
 #buy-tickets {
@@ -375,4 +380,16 @@ html {
 #buy-tickets:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+
+/* tạo chuyển động */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-160px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
