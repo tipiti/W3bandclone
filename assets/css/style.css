@@ -1,4 +1,6 @@
 /* reset CSS */
+
+/* common */
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +19,31 @@ html {
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center; !important
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+/* main */
 #main {
     
 }
@@ -172,19 +199,13 @@ html {
     /* overflow: hidden; khi sử dụng float ở thẻ con sẽ dễ gặp lỗi vị trí, dùng cách này ở thẻ cha để giải quyết */
 }
 
-.members-list .member-item .member-img {
+.members-list .member-img {
     /* display: block;
     margin-left: auto;
     margin-right: auto; */
     margin-top: 15px;
     width: 154px;
     border-radius: 4px;
-}
-
-#content .member-item {
-    float: left;
-    text-align: center;
-    width: 33%;
 }
 
 #content .member-name {
@@ -229,14 +250,9 @@ html {
 
 /* places */
 .places-list {
-    margin: 32px -8px 0px;
+    margin-top: 32px;
     padding-bottom: 48px;
-}
-
-.place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
+    margin-bottom: 48px;
 }
 
 .place-img {
